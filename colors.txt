@@ -1,0 +1,6 @@
+vanilla #f2f3ae;
+Flax #edd382;
+Cocoa Brown #d26825;
+primary color #c73000;
+Rich Black #020122;
+Dark Blue #234163;

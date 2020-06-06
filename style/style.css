@@ -1,0 +1,1549 @@
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black|Baloo|Bungee|Montserrat|Pacifico');
+
+html, body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Hide toggle button for navigation on desktop */
+#toggleNav{
+  display: none;
+}
+
+/* This is customBlueBtn frequently used in website */
+.customBlueBtn{
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.7rem 0.9rem;
+  color: #fff;
+  border-radius: 8px;
+  background: #234163;
+  cursor: pointer;
+  border: 2px solid #234163;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.customBlueBtn:hover{
+  color: #234163;
+  background: #fff;
+  text-decoration: none;
+}
+
+/* This is customOrangeBtn frequently used in website */
+.customOrangeBtn{
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  color: #fff;
+  border-radius: 8px;
+  background: #c73000;
+  cursor: pointer;
+  border: 2px solid #c73000;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.customOrangeBtn:hover{
+  color: #c73000;
+  background: #fff;
+  text-decoration: none;
+}
+
+/* ------------- Header Styling ------------- */
+header{
+  z-index: 10;
+}
+
+#topNav{
+  background: #c73000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#topNav > div{
+  padding: 10px 0px;
+  color: #fff;
+  margin: 0px 30px;
+}
+
+#topNav > div > i{
+  font-size:25px;
+  color:#fff;
+  margin-right:10px;
+}
+
+#navBar{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  height: 80px;
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  z-index: 100;
+  position: relative;
+}
+
+/* To avoid flickering of page */
+#navClearfix{
+  height: 80px;
+  width: 100%;
+}
+
+#logo{
+  width: 200px;
+  height: 100%;
+  text-align: center;
+  background: #fff;
+  color: #fff;
+}
+
+#logo img{
+  height: 100%;
+  width: 100%;
+}
+
+/* To stick navigation to top */
+#navBar.stickyNav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+
+#navBar > ul{
+  background: #fff;
+  width: 70%;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#navBar ul li{
+  margin-left: 10px;
+}
+
+#navBar ul li:nth-child(6) > a{
+  background-color: #234163;
+  color: #fff;
+  border-radius: 8px;
+  border: 2px solid #234163;
+  text-align: center;
+}
+
+#navBar ul li:nth-child(6) > a:hover{
+  color: #234163;
+  background: #fff;
+}
+
+#navBar ul li:nth-child(7){
+  position: relative;
+  text-align: center;
+}
+
+#navBar ul li:nth-child(7) > a > span{
+  font-size: 12px;
+  color: #aaa;
+  font-family: sans-serif;
+}
+
+#navBar ul li:nth-child(7) > a > i{
+  font-size: 30px;
+}
+
+#navBar ul li:nth-child(7) > ul{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  background: #fff;
+  box-shadow: 0px 5px 10px #000;
+}
+
+#navBar ul li:nth-child(7):hover > ul{
+  display: block;
+}
+
+#navBar ul li:nth-child(7) > ul li{
+  margin-left: 0;
+}
+
+#navBar ul li:nth-child(7) > ul a{
+  padding: 8px;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#navBar ul li a{
+  display: block;
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  color: #020122;
+  font-weight: bold;
+  transition: color 0.5s;
+}
+
+#navBar ul li a:hover{
+  color: #c73000;
+}
+
+/* ------------- Hero Section Styling ------------- */
+
+#heroSection{
+  height: 100vh;
+  width: 100%;
+  background: url('../images/carwash.jpg');
+  background-position: 0px 0px;
+  /* background-attachment: fixed; */
+  background-size: cover;
+  position: relative;
+}
+
+#transparentBG{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.center{
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.center h1{
+  color: #ff3e00;
+  font-weight: bold;
+  font-size: 3.2rem;
+  font-family: 'Archivo Black', sans-serif;
+  text-align: center;
+}
+
+.center h2{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.center h3{
+  color: #f2f3ae;
+  font-family: 'Pacifico', cursive;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.center input[type='tel']{
+  max-width: 250px;
+  margin: 8px 15px;
+  padding: 0.7rem 0.9rem;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+
+/* Service Section WE PROVIDE */
+#serviceSection{
+  min-height: 100%;
+  width: 100%;
+  padding-bottom: 70px;
+  background: #f2f3ae;
+}
+
+.titleHead{
+  width: 100%;
+  text-align: center;
+  padding: 3.5rem 0 3rem 0;
+}
+
+.titleHead h1{
+  color: #484848;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Baloo', cursive;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.titleHead img{
+  height: 50px;
+  width: 50px;
+}
+
+.cardIcon{
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  margin: 1rem auto 0.5rem auto;
+  text-align: center;
+  border: 3px solid #234163;
+  border-radius: 50%;
+}
+
+.cardIcon img{
+  width: 90px;
+}
+
+.serviceHead{
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.desc{
+  color: #5f5f5f;
+  text-align: center;
+}
+
+/* WHYCHOOSEUS Section */
+#whyChooseUs{
+  padding: 4rem 0;
+  text-align: center;
+  background: #234163;
+}
+
+#whyChooseUs h2{
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 3rem;
+  font-family: sans-serif;
+}
+
+#whyChooseUs h4{
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+#whyChooseUs i{
+  font-size: 5rem;
+  color: #edd382;
+}
+
+#whyChooseUs p{
+  color: #d7d0d0;
+  margin-bottom: 2rem;
+}
+
+/* WORK SECTION - showing work with images */
+#workSection{
+  padding-bottom: 70px;
+}
+
+.serviceImageCard{
+  margin-top: 2.5rem;
+}
+
+.serviceImage{
+  width: 100%;
+  position: relative;
+}
+
+.serviceImage .serviceImageTag{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px 12px;
+  color: #fff;
+  background: #c73000;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.serviceImageTag:after{
+  content: ' ';
+  position: absolute;
+  top: 25px;
+  left: 6px;
+  border-top: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #8a2201;
+  transform: rotate(-45deg);
+}
+
+.serviceImageTag:before{
+  content: ' ';
+  position: absolute;
+  top: -14px;
+  right: 5px;
+  border-top: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #8a2201;
+  border-left: 15px solid transparent;
+  transform: rotate(-135deg);
+}
+
+.serviceImage img{
+  width: 100%;
+  height: 350px;
+}
+
+#workSection .container{
+  position: relative;
+}
+
+.seemore{
+  margin-top: 2rem;
+  text-align: right;
+}
+
+/* Eco section pricing */
+#ecoWashSection{
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+}
+
+/* PRICING SECTION STYLING */
+#priceSection{
+  padding-bottom: 70px;
+}
+
+.cardParent{
+  position: relative;
+  margin-top: 1rem;
+  perspective: 1000px;
+}
+
+.backside{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px #aaa;
+  transform: translate(-50%, -50%) rotateY(-180deg);
+  background: #fff;
+  backface-visibility: hidden;
+  transform-origin: center;
+  transition: all 0.5s;
+}
+
+.backside ul{
+  list-style: none;
+  margin: 0;
+}
+
+.backside ul li{
+  padding: 8px;
+}
+
+.backside ul li:hover{
+  border-left: 15px solid #234163;
+  border-right: 15px solid #234163;
+}
+
+.backside p{
+  font-size: 14px;
+  color: #aaa;
+}
+
+.backside a{
+  display: inline-block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  padding: 8px;
+  color: #fff;
+  background: #c73000;
+  border: 2px solid #c73000;
+  transition: all 0.3s;
+}
+
+.backside a:hover{
+  color: #c73000;
+  background: #fff;
+}
+
+.frontside{
+  background: #fff;
+  backface-visibility: hidden;
+  transform-origin: center;
+  transition: all 0.5s;
+}
+
+.priceCardWrapper{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px #aaa;
+  perspective: 1000px;
+}
+
+.priceCardHeader{
+  text-align: center;
+}
+
+.priceCardHeader > i{
+  font-size: 4rem;
+}
+
+.priceCategory{
+  position: relative;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  background: #234163;
+  padding: 30px 0px;
+  color: #fff;
+}
+
+.priceCategory h1{
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+
+.priceCategory p{
+  margin: 0;
+}
+
+.priceCategory:after{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: #234163;
+  z-index: -1;
+  transform: skewY(15deg);
+  -webkit-transform: skewY(15deg);
+  -ms-transform: skewY(15deg);
+  -o-transform: skewY(15deg);
+}
+
+.priceCategory:before{
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 100%;
+  background: #234163;
+  z-index: -1;
+  transform: skewY(-15deg);
+  -webkit-transform: skewY(-15deg);
+  -ms-transform: skewY(-15deg);
+  -o-transform: skewY(-15deg);
+}
+
+.detailPricing{
+  margin-top: 30px;
+  text-align: center;
+}
+
+.detailPricing a{
+  padding: 8px 12px;
+  font-size: 16px;
+  color: #fff;
+  background: #c73000;
+  border: 2px solid #c73000;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.detailPricing a:hover{
+  color: #c73000;
+  background: #fff;
+}
+
+/* one time price styling */
+#oneTimePrice{
+  padding-bottom: 70px;
+}
+
+/* HOW IT WORKS styling */
+#howItWorks{
+  padding: 20px 0px 70px 0px;
+}
+
+.howitCard{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.howitIcon{
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.howitIcon i{
+  font-size: 4rem;
+  color: #aaa;
+}
+
+/* BrandSection Styling */
+#brandSection{
+  padding: 50px 0px;
+  margin-bottom: 50px;
+}
+
+.slidesContainer{
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.slides{
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s;
+  transition-delay: 1s;
+}
+
+.slides.currentSlide{
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+/* -----------Feedback Section Styling------------ */
+#feedbackSection{
+  padding-bottom: 50px;
+  background: #f2f3ae;
+  text-align: center;
+}
+
+#feedbackSection input,#feedbackSection textarea{
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+#feedbackSection input[type=submit]{
+  display: block;
+  max-width: 350px;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-align: center;
+  border: 2px solid #c73000;
+  outline: none;
+  margin: 30px auto;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #c73000;
+  transition: all 0.3s;
+}
+
+#feedbackSection input[type=submit]:hover{
+  background: #fff;
+  color: #c73000;
+}
+
+.inputLabel{
+  margin-top: 50px;
+  position: relative;
+}
+
+.inputLabel > label{
+  position: absolute;
+  top: 10px;
+  left: 30px;
+  transition: all 0.5s;
+}
+
+#feedbackSection input:focus, #feedbackSection textarea:focus {
+  border-bottom: 1px solid #c73000;
+}
+
+#feedbackSection input.focus ~ label, #feedbackSection textarea.focus ~ label {
+  top: -25px;
+  color: #c73000;
+  font-size: 14px;
+}
+
+#feedbackError{
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  color: #f00;
+  font-weight: bold;
+}
+
+/* ------- Phone No Section ------- */
+#phoneNoSection{
+  padding: 3rem 0rem;
+}
+
+#phoneNoSection > h1{
+  text-align: center;
+}
+
+#phoneNoSection h1 a{
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #d5b735;
+  color: #fff;
+  border-radius: 0.5rem;
+  margin: 10px auto;
+}
+
+/* Body Wrapper */
+#bodyWrapper{
+  min-height: 100%;
+  padding-bottom: 152px;
+}
+
+/* -------------- Footer ---------------- */
+footer{
+  padding: 40px 0px 70px 0px;
+  text-align: center;
+  margin-top: -143px;
+  background: #234163;
+  color: #fff;
+}
+
+footer p{
+  font-style: italic;
+}
+
+footer h6{
+  font-weight: bold;
+}
+
+/* loginBox styling */
+#loginRegister{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.9);
+  text-align: center;
+  z-index: 200;
+}
+
+#loginRegister > .loginBox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.loginBox > #loginClose{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.loginBox > #loginClose > i{
+  font-size: 2rem;
+}
+
+.loginBox > div{
+  margin-top: 1.5rem;
+}
+
+.loginBox input{
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #aaa;
+}
+
+.loginBox input:focus{
+  border: 1px solid #c73000;
+}
+
+.loginBox input[type='submit']{
+  background: #234163;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 0;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.loginBox input[type='submit']:hover{
+  background: #275c98;
+}
+
+.loginBox p{
+  margin-top: 20px;
+}
+
+.loginBox > span{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #f00;
+  font-weight: bold;
+}
+
+/* Fixed phone number & Book now */
+#callnowBooknow{
+  display: block;
+  position: fixed;
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%);
+  z-index: 200;
+}
+
+#callnowBooknow > div{
+  background: #234163;
+  color: #fff;
+  margin-top: 2px;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 2px solid #234163;
+  transition: all 0.3s;
+}
+
+#callnowBooknow > div > a{
+  text-decoration: none;
+  color: #fff;
+}
+
+#callnowBooknow > div:hover a{
+  color: #234163;
+}
+
+#callnowBooknow > div:hover{
+  background: #fff;
+  color: #234163;
+}
+
+#callnowBooknow > div:nth-child(2){
+  color: #fff;
+  background: #c73000;
+  border: 2px solid #c73000;
+}
+
+#callnowBooknow > div:nth-child(2):hover{
+  background: #fff;
+  color: #c73000;
+}
+
+#callnowBooknow > div:nth-child(2):hover a{
+  color: #c73000;
+}
+
+
+/* ----------- loader ----------- */
+#loaderContainer{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  z-index: 1000;
+}
+
+#loader{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #c73000;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+
+/* ----------------Animations-------------------- */
+.hide{
+  opacity: 0;
+  transform: translateX(-300px);
+  transition: all 1s;
+}
+
+.hide.fadeInUp{
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/*-------------------------------------------
+---------------------------------------------
+----------BOOKING.PHP STYLING----------------
+---------------------------------------------
+*/
+#multiphaseBook > div:nth-child(1){
+  margin: 4rem auto 2rem auto;
+  text-align: center;
+}
+
+#multiphaseBook > ul{
+  max-width: 350px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#multiphaseBook > ul > li{
+  position: relative;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #c73000;
+  color: #fff;
+  text-align: center;
+  line-height: 25px;
+}
+
+#multiphaseBook > ul > li:after{
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  height: 2px;
+  width: 195px;
+  background: #56b426;
+}
+
+#multiphaseBook #d1{
+  background: #56b426;
+}
+
+#multiphaseBook > ul > li:nth-child(3):after{
+  content: none;
+}
+
+#errorLog{
+  text-align: center;
+  color: red;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.phases{
+  position: relative;
+  max-width: 500px;
+  margin: 1.5rem auto 0 auto;
+}
+
+.phase{
+  display: none;
+}
+
+.phase.show{
+  display: block;
+}
+
+.phases > .phase{
+  width: 100%;
+  padding: 0.7rem;
+  text-align: center;
+}
+
+.phase h6{
+  text-align: center;
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+#phase1 h6{
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.phase button{
+  background: #c73000;
+  color: #fff;
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#phase2 > div{
+  margin-top: 10px;
+}
+
+.phase select{
+  padding: 0.5rem 0.8rem;
+}
+
+.phase input[type='text'], textarea{
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+#homeaddress-error{
+  display: block;
+}
+
+.phase input[type='text']:focus{
+  border: 1px solid #c73000;
+}
+
+#phase3 span{
+  display: block;
+  margin-top: 20px;
+  text-align: left;
+  color: #000;
+}
+
+#phase4 th{
+  width: 50%;
+}
+
+#phase4 td{
+  width: 50%;
+  text-align: left;
+}
+
+#phase4 h5{
+  margin-bottom: 2rem;
+}
+
+#hiddenForm{
+  display: none;
+  text-align: center;
+}
+
+#hiddenForm input[type='submit']{
+  background: #c73000;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/*-------------------------------------------
+---------------------------------------------
+----------Register.PHP STYLING----------------
+---------------------------------------------
+*/
+
+#registerForm{
+  margin: 4rem auto;
+  max-width: 450px;
+  padding: 15px;
+  box-shadow: 5px 5px 15px #aaa;
+}
+
+#registerForm h2{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#registerForm div > input[type='submit']{
+  background: #234163;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#registerForm div > input[type='submit']:hover{
+  background: #275c98;
+}
+
+#profilePhotoFile{
+  display: none;
+}
+
+#profilePhotoFile + label{
+  cursor: pointer;
+  background: #c73000;
+  color: #fff;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#registerError{
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #f00;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/*-------------------------------------------
+---------------------------------------------
+----------MYACCOUNT.PHP STYLING----------------
+---------------------------------------------
+---------------------------------------------
+*/
+#myAccount{
+  padding: 4rem 0;
+}
+
+#myAccount h2{
+  margin-bottom: 1.5rem;
+}
+
+#myAccountOption{
+  text-align: center;
+  padding: 8px;
+  background: #fff;
+  box-shadow: 2px 3px 10px #777;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+#myAccountOption img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+
+#myAccountOption > div{
+  font-size: 15px;
+  color: #686868;
+  margin-top: 0.7rem;
+}
+
+
+#myAccountOption ul{
+  margin-top: 1.5rem;
+  list-style: none;
+}
+
+#myAccountOption ul > li{
+  margin-top: 0.5rem;
+}
+
+.flex-box{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#myPackagesNSpent > div{
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#myPackagesNSpent h6{
+  font-weight: bold;
+  margin-bottom: 1rem
+}
+
+#myPackagesNSpent p{
+  color: #686868;
+  margin: 0;
+}
+
+#myAccountBookings{
+  padding-bottom: 4rem;
+}
+
+#myAccountBookings h2{
+  margin-bottom: 2rem;
+}
+
+#myPackagesDesc{
+  margin-top: 1rem;
+  text-align: center;
+}
+
+#myPackagesDesc > div.col-md-4 > div{
+  min-width: 230px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 2px #000;
+  margin: 1rem auto;
+  padding: 20px;
+}
+
+#myPackageInfo p{
+  max-width: 500px;
+  padding: 20px;
+  margin: 1.5rem auto 0 auto;
+  background: #ccf9cc;
+}
+
+.washingCardHead i{
+  font-size: 4rem;
+}
+
+.washingCardHead h3{
+  margin: 0.5rem 0;
+}
+
+.washingCardHead h5{
+  color: #686868;
+}
+
+.washingCardDesc ul{
+  margin-top: 1.5rem;
+  list-style-position: inside;
+}
+
+.washingCardBottom{
+  padding: 0.5rem 0;
+}
+
+.washingCardBottom a{
+  padding: 8px;
+  color: #fff;
+  background: #234163;
+  text-decoration: none;
+}
+
+/*-------------------------------------------
+---------------------------------------------
+----------CONTACT.PHP STYLING----------------
+---------------------------------------------
+---------------------------------------------
+*/
+
+#contactPageSection{
+  padding-bottom: 50px;
+}
+
+#contactPageSection .contactCard{
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#contactPageSection .contactCard i{
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  color: #aaa;
+}
+
+/*-------------------------------------------
+---------------------------------------------
+----------ABOUT.PHP STYLING----------------
+---------------------------------------------
+---------------------------------------------
+*/
+#aboutPageSection .aboutUs{
+  max-width: 600px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#aboutPageSection .aboutUs img{
+  width: 100%;
+  margin-bottom: 2rem;
+  height: 300px;
+}
+
+#aboutPageSection .aboutUs p{
+  text-indent: 30px;
+  color: #818181;
+}
+
+/*-------------------------------------------
+---------------------------------------------
+----------SERVICES.PHP STYLING----------------
+---------------------------------------------
+---------------------------------------------
+*/
+#servicePageSection{
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+#servicePageSection .container img{
+  width: 100%;
+  height: 300px;
+  margin-bottom: 1rem;
+}
+
+#servicePageSection .container span{
+  position: relative;
+  display: inline-block;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#servicePageSection .container span:after{
+  content: '';
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  top: 100%;
+  background: #ff0000;
+}
+
+#servicePageSection .container p{
+  color: #807d7d;
+  text-align: center;
+}
+
+/* -------------RESPONSIVE WEB DESIGN -----------*/
+
+/* MOBILE */
+@media screen and (max-width: 576px) {
+  html, body{
+    font-size: 14px;
+  }
+
+  /* TOP NAVIGATION */
+  #toggleNav{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #c73000;
+    cursor: pointer;
+  }
+
+  #logo{
+    width:150px;
+    line-height: 65px;
+  }
+
+  #logo img {
+    height: 50px;
+    width: 100%;
+  }
+
+  #topNav > div{
+    font-size: 13px;
+    margin: 0;
+  }
+
+  #topNav > div > i{
+    font-size:14px;
+    margin-right: 3px;
+  }
+
+  #navClearfix{
+    height: 70px;
+  }
+
+  #navBar{
+    display: block;
+    height: 70px;
+  }
+
+  #navBar > ul{
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    transition: all 0.3s;
+  }
+
+  #navBar > ul.navShow{
+    left: 0;
+  }
+
+  #navBar ul li {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  #navBar ul li:nth-child(7) > ul{
+    top: -100%;
+  }
+
+  .cardIcon{
+    margin: 3.3rem auto 0 auto;
+  }
+
+  /* Hero section heading */
+  .center h1{
+    font-size: 2.2rem;
+  }
+
+  .center h2{
+    font-size: 1.5rem;
+  }
+
+  .center h3{
+    font-size: 1.5rem;
+  }
+
+  /* Making Slideshow Responsive */
+  .slides > div{
+    height: 50px;
+    width: 50px;
+  }
+
+  .slides > div > img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .slidesContainer{
+    height: 50px;
+  }
+
+  /* Call now & Book now */
+  #callnowBooknow{
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(0);
+  }
+
+  #callnowBooknow > div{
+    flex: 1;
+    text-align: center;
+  }
+
+  /* Login box */
+  #loginRegister > .loginBox{
+    width: 100%;
+  }
+}
+
+/* TABLET */
+@media screen and (max-width: 768px) and (min-width: 577px) {
+  html, body{
+    font-size: 15px;
+  }
+
+  /* RESPONSIVE header */
+  #toggleNav{
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: #c73000;
+    cursor: pointer;
+  }
+
+  #navClearfix{
+    height: 70px;
+  }
+
+  #navBar{
+    display: block;
+    height: 70px;
+  }
+
+  #navBar > ul{
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    transition: all 0.3s;
+  }
+
+  #navBar > ul.navShow{
+    left: 0;
+  }
+
+  #navBar ul li {
+    margin-left: 0px;
+    text-align: center;
+  }
+
+  #navBar ul li:nth-child(7) > ul{
+    top: -100%;
+  }
+
+  .cardIcon{
+    margin: 2rem auto 0 auto;
+  }
+
+  /* Call now & Book now */
+  #callnowBooknow{
+    display: flex;
+    width: 100%;
+    bottom: 0;
+    transform: translateY(0);
+  }
+
+  #callnowBooknow > div{
+    flex: 1;
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 1140px) and (min-width: 769px){
+  /* Call now & Book now */
+  #callnowBooknow{
+    display: none;
+  }
+}
